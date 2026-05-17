@@ -5,7 +5,7 @@ setInterval(function () {
     let s = a.getSeconds();
     let d = a.getDate();
     let day = a.getDay();
-    let mo = a.getMonth();
+    let mo = a.getMonth()+1;
     let y = a.getFullYear();
 
     let hour = document.getElementById("hour");
@@ -18,28 +18,18 @@ setInterval(function () {
 
     if (h < 10) {
         h = "0" + h;
-    } else {
-        h = h;
-    }
+    } 
     if (m < 10) {
         m = "0" + m;
-    } else {
-        m = m;
     }
     if (s < 10) {
         s = "0" + s;
-    } else {
-        s = s;
     }
     if (d < 10) {
         d = "0" + d;
-    } else {
-        d = d;
     }
     if (mo < 10) {
         mo = "0" + mo;
-    } else {
-        mo = mo;
     }
 
     hour.innerHTML = h;
@@ -50,25 +40,25 @@ setInterval(function () {
     year.innerHTML = y;
 
     if(day==0){
-        dot.style.backgroundColor= "red";
+        dot0.style.backgroundColor= "red";
     }
     if(day==1){
-        dot.style.backgroundColor= "red";
+        dot1.style.backgroundColor= "red";
     }
     if(day==2){
-        dot.style.backgroundColor= "red";
+        dot2.style.backgroundColor= "red";
     }
     if(day==3){
-        dot.style.backgroundColor= "red";
+        dot3.style.backgroundColor= "red";
     }
     if(day==4){
-        dot.style.backgroundColor= "red";
+        dot4.style.backgroundColor= "red";
     }
     if(day==5){
-        dot.style.backgroundColor= "red";
+        dot5.style.backgroundColor= "red";
     }
     if(day==6){
-        dot.style.backgroundColor= "red";
+        dot6.style.backgroundColor= "red";
     }
 
 }, 1000);
